@@ -15,5 +15,14 @@ namespace UTMAndWGS84TransTool
         {
             InitializeComponent();
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtLat.Text = "";
+            txtLon.Text = "";
+            txtX.Text = "";
+            txtY.Text = "";
+            txtZone.Text = "";
+        }
     }
 }
