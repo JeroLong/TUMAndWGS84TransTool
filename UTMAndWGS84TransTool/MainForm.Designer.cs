@@ -1,6 +1,6 @@
 ﻿namespace UTMAndWGS84TransTool
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -58,7 +58,6 @@
             this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 0;
             this.label1.Text = "Lon:";
-            this.label1.UseWaitCursor = true;
             // 
             // label2
             // 
@@ -68,7 +67,6 @@
             this.label2.Size = new System.Drawing.Size(29, 12);
             this.label2.TabIndex = 1;
             this.label2.Text = "Lat:";
-            this.label2.UseWaitCursor = true;
             // 
             // txtLon
             // 
@@ -76,7 +74,6 @@
             this.txtLon.Name = "txtLon";
             this.txtLon.Size = new System.Drawing.Size(151, 21);
             this.txtLon.TabIndex = 2;
-            this.txtLon.UseWaitCursor = true;
             // 
             // txtLat
             // 
@@ -84,7 +81,6 @@
             this.txtLat.Name = "txtLat";
             this.txtLat.Size = new System.Drawing.Size(151, 21);
             this.txtLat.TabIndex = 3;
-            this.txtLat.UseWaitCursor = true;
             // 
             // groupBox1
             // 
@@ -98,7 +94,6 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "WGS84";
-            this.groupBox1.UseWaitCursor = true;
             // 
             // groupBox2
             // 
@@ -117,7 +112,6 @@
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "UTM";
-            this.groupBox2.UseWaitCursor = true;
             // 
             // rdoS
             // 
@@ -129,7 +123,6 @@
             this.rdoS.TabStop = true;
             this.rdoS.Text = "S";
             this.rdoS.UseVisualStyleBackColor = true;
-            this.rdoS.UseWaitCursor = true;
             // 
             // rdoN
             // 
@@ -142,7 +135,6 @@
             this.rdoN.TabStop = true;
             this.rdoN.Text = "N";
             this.rdoN.UseVisualStyleBackColor = true;
-            this.rdoN.UseWaitCursor = true;
             // 
             // txtZone
             // 
@@ -150,7 +142,6 @@
             this.txtZone.Name = "txtZone";
             this.txtZone.Size = new System.Drawing.Size(70, 21);
             this.txtZone.TabIndex = 6;
-            this.txtZone.UseWaitCursor = true;
             // 
             // txtY
             // 
@@ -158,7 +149,6 @@
             this.txtY.Name = "txtY";
             this.txtY.Size = new System.Drawing.Size(166, 21);
             this.txtY.TabIndex = 5;
-            this.txtY.UseWaitCursor = true;
             // 
             // txtX
             // 
@@ -166,7 +156,6 @@
             this.txtX.Name = "txtX";
             this.txtX.Size = new System.Drawing.Size(166, 21);
             this.txtX.TabIndex = 4;
-            this.txtX.UseWaitCursor = true;
             // 
             // label6
             // 
@@ -176,7 +165,6 @@
             this.label6.Size = new System.Drawing.Size(71, 12);
             this.label6.TabIndex = 3;
             this.label6.Text = "Hemisphere:";
-            this.label6.UseWaitCursor = true;
             // 
             // label5
             // 
@@ -186,7 +174,6 @@
             this.label5.Size = new System.Drawing.Size(35, 12);
             this.label5.TabIndex = 2;
             this.label5.Text = "Zone:";
-            this.label5.UseWaitCursor = true;
             // 
             // label4
             // 
@@ -196,7 +183,6 @@
             this.label4.Size = new System.Drawing.Size(17, 12);
             this.label4.TabIndex = 1;
             this.label4.Text = "Y:";
-            this.label4.UseWaitCursor = true;
             // 
             // label3
             // 
@@ -206,7 +192,6 @@
             this.label3.Size = new System.Drawing.Size(17, 12);
             this.label3.TabIndex = 0;
             this.label3.Text = "X:";
-            this.label3.UseWaitCursor = true;
             // 
             // btnWGS84ToUTM
             // 
@@ -216,7 +201,7 @@
             this.btnWGS84ToUTM.TabIndex = 6;
             this.btnWGS84ToUTM.Text = ">>";
             this.btnWGS84ToUTM.UseVisualStyleBackColor = true;
-            this.btnWGS84ToUTM.UseWaitCursor = true;
+            this.btnWGS84ToUTM.Click += new System.EventHandler(this.btnWGS84ToUTM_Click);
             // 
             // btnUTMToWGS84
             // 
@@ -226,7 +211,7 @@
             this.btnUTMToWGS84.TabIndex = 7;
             this.btnUTMToWGS84.Text = "<<";
             this.btnUTMToWGS84.UseVisualStyleBackColor = true;
-            this.btnUTMToWGS84.UseWaitCursor = true;
+            this.btnUTMToWGS84.Click += new System.EventHandler(this.btnUTMToWGS84_Click);
             // 
             // btnClear
             // 
@@ -236,10 +221,9 @@
             this.btnClear.TabIndex = 8;
             this.btnClear.Text = "清空";
             this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.UseWaitCursor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -249,9 +233,9 @@
             this.Controls.Add(this.btnWGS84ToUTM);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Name = "MainForm";
             this.Text = "UTM-WGS84转换工具";
-            this.UseWaitCursor = true;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

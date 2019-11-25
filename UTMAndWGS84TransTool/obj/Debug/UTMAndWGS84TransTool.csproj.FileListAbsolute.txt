@@ -1,8 +1,7 @@
 D:\UTMAndWGS84TransTool\UTMAndWGS84TransTool\bin\Debug\UTMAndWGS84TransTool.exe
 D:\UTMAndWGS84TransTool\UTMAndWGS84TransTool\bin\Debug\UTMAndWGS84TransTool.pdb
-D:\UTMAndWGS84TransTool\UTMAndWGS84TransTool\obj\Debug\UTMAndWGS84TransTool.csprojResolveAssemblyReference.cache
-D:\UTMAndWGS84TransTool\UTMAndWGS84TransTool\obj\Debug\UTMAndWGS84TransTool.Form1.resources
 D:\UTMAndWGS84TransTool\UTMAndWGS84TransTool\obj\Debug\UTMAndWGS84TransTool.Properties.Resources.resources
 D:\UTMAndWGS84TransTool\UTMAndWGS84TransTool\obj\Debug\UTMAndWGS84TransTool.csproj.GenerateResource.Cache
 D:\UTMAndWGS84TransTool\UTMAndWGS84TransTool\obj\Debug\UTMAndWGS84TransTool.exe
 D:\UTMAndWGS84TransTool\UTMAndWGS84TransTool\obj\Debug\UTMAndWGS84TransTool.pdb
+D:\UTMAndWGS84TransTool\UTMAndWGS84TransTool\obj\Debug\UTMAndWGS84TransTool.MainForm.resources
